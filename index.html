@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login jQuery Mobile</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- ThemeRoller CSS -->
+    <link rel="stylesheet" href="CSS/themes/themes.css">
+    <link rel="stylesheet" href="CSS/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="CSS/themes/themes.min.css">
+
+    <!-- jQuery & jQuery Mobile -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Script sendiri -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<!-- PAGE LOGIN -->
+<div data-role="page" id="page1" data-theme="b">
+    <div data-role="header" data-theme="a">
+        <h1>Login</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <label>Username:</label>
+        <input type="text" id="username">
+
+        <label>Password:</label>
+        <input type="password" id="password">
+
+        <a href="#" id="loginBtn" data-role="button" data-theme="b">Login</a>
+    </div>
+
+   <!-- POPUP -->
+<div data-role="popup" id="popupError" data-theme="a" data-overlay-theme="b" data-position-to="window" data-dismissible="true">
+    <div data-role="header" data-theme="a"><h1>Ralat</h1></div>
+    <div role="main" class="ui-content">
+        <p>Sila isi username & password</p>
+        <a href="#" class="ui-btn" data-rel="back" data-theme="a">OK</a>
+    </div>
+</div>
+</div>
+
+<!-- PAGE HOME -->
+<div data-role="page" id="page2" data-theme="c">
+    <div data-role="header" data-theme="b"><h1>Home</h1></div>
+    <div role="main" class="ui-content">
+        <h3>Login Berjaya!</h3>
+        <a href="#page1" data-role="button" data-theme="b">Logout</a>
+    </div>
+</div>
+
+</body>
+</html>
